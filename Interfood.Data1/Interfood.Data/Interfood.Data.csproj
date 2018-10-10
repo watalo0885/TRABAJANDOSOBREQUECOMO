@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CDF04CF9-92C7-4486-AC11-837E716F4633}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Interfood.Data</RootNamespace>
+    <AssemblyName>Interfood.Data</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\_Version1.1\Bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\..\..\..\_Version1.1\Bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlimentoData.cs" />
+    <Compile Include="AlimentoNutrienteData.cs" />
+    <Compile Include="aspnet_ExtendedPropertiesData.cs" />
+    <Compile Include="aspnet_RolesData.cs" />
+    <Compile Include="CustomData.cs" />
+    <Compile Include="EncuestaAlimentariaData.cs" />
+    <Compile Include="EncuestaAlimentoData.cs" />
+    <Compile Include="EncuestaAliNutData.cs" />
+    <Compile Include="FuenteData.cs" />
+    <Compile Include="Listado_AlimentosPorEncuestasData.cs" />
+    <Compile Include="Listado_NutrientesPorAlimentosData.cs" />
+    <Compile Include="Listado_NutrientesPorEncuestasData.cs" />
+    <Compile Include="NutrienteData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoDeAlimentosData.cs" />
+    <Compile Include="TipoDeDietaData.cs" />
+    <Compile Include="UnidadMedidaData.cs" />
+    <Compile Include="vAlimentoNutrienteData.cs" />
+    <Compile Include="vAlimentoNutrienteParaAgregarData.cs" />
+    <Compile Include="vAlimentosData.cs" />
+    <Compile Include="vAlimentosDeEncuestasData.cs" />
+    <Compile Include="vEncuestaAlimentoData.cs" />
+    <Compile Include="vEncuestaHeaderData.cs" />
+    <Compile Include="vExtendedPropertiesData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Helpers.Operators\Helpers.Operators.csproj">
+      <Project>{42e815b0-1fe1-49f6-a28a-b21c539da30a}</Project>
+      <Name>Helpers.Operators</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfood.Configuration\Interfood.Configuration.csproj">
+      <Project>{caf9c523-c22f-4887-a271-0c3f8ea71fa7}</Project>
+      <Name>Interfood.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfood.Entities\Interfood.Entities.csproj">
+      <Project>{8b1dff39-f48b-4604-a75f-cc3e671c8b6b}</Project>
+      <Name>Interfood.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

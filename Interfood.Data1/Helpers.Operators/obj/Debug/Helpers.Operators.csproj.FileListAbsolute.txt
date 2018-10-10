@@ -1,0 +1,4 @@
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Operators\bin\Debug\Helpers.Operators.dll
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Operators\bin\Debug\Helpers.Operators.pdb
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Operators\obj\Debug\Helpers.Operators.dll
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Operators\obj\Debug\Helpers.Operators.pdb

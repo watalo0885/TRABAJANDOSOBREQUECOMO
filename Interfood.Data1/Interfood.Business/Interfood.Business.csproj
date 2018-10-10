@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95FD178E-F996-4B8F-B71D-1F39BE95144F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Interfood.Business</RootNamespace>
+    <AssemblyName>Interfood.Business</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlimentoBus.cs" />
+    <Compile Include="AlimentoNutrienteBus.cs" />
+    <Compile Include="aspnet_ExtendedPropertiesBus.cs" />
+    <Compile Include="aspnet_RolesBus.cs" />
+    <Compile Include="CustomBus.cs" />
+    <Compile Include="EncuestaAlimentariaBus.cs" />
+    <Compile Include="EncuestaAlimentoBus.cs" />
+    <Compile Include="EncuestaAliNutBus.cs" />
+    <Compile Include="FuenteBus.cs" />
+    <Compile Include="Listado_AlimentosPorEncuestasBus.cs" />
+    <Compile Include="Listado_NutrientesPorAlimentosBus.cs" />
+    <Compile Include="Listado_NutrientesPorEncuestasBus.cs" />
+    <Compile Include="NutrienteBus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoDeAlimentosBus.cs" />
+    <Compile Include="TipoDeDietaBus.cs" />
+    <Compile Include="UnidadMedidaBus.cs" />
+    <Compile Include="vAlimentoNutrienteBus.cs" />
+    <Compile Include="vAlimentoNutrienteParaAgregarBus.cs" />
+    <Compile Include="vAlimentosBus.cs" />
+    <Compile Include="vAlimentosDeEncuestasBus.cs" />
+    <Compile Include="vEncuestaAlimentoBus.cs" />
+    <Compile Include="vEncuestaHeaderBus.cs" />
+    <Compile Include="vExtendedPropertiesBus.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Helpers.Logger\Helpers.Logger.csproj">
+      <Project>{61b48435-ca29-4c6d-b5a0-c0b80948d0ef}</Project>
+      <Name>Helpers.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfood.Data\Interfood.Data.csproj">
+      <Project>{cdf04cf9-92c7-4486-ac11-837e716f4633}</Project>
+      <Name>Interfood.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfood.Entities\Interfood.Entities.csproj">
+      <Project>{8b1dff39-f48b-4604-a75f-cc3e671c8b6b}</Project>
+      <Name>Interfood.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

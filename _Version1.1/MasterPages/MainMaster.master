@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMaster.master.cs" Inherits="MasterPages_MainMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Que-Como - Panel de Control</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="true"
+        EnableScriptLocalization="true" EnablePartialRendering="true">
+        <Scripts>
+            <asp:ScriptReference Path="~/_assets/JQuery/jquery-1.3.js" />
+            <asp:ScriptReference Path="~/_assets/JQuery/thickbox.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <table border="0" cellpadding="0" cellspacing="0" class="full-height">
+        <tr>
+            <td id="cabecera">
+                <span><b>Que-Como</b> - Panel de Control </span>
+            </td>
+        </tr>
+        <tr>
+            <td style="height: 92%; width: 100%;" valign="top">
+                <table class="full-height">
+                    <tr>
+                        <td valign="top" id="menu" style="height: inherit;">
+                            <asp:ContentPlaceHolder ID="CPH_Menu" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                        <td valign="top" id="contenido">
+                            <asp:ContentPlaceHolder ID="CPH_Body" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td id="pie">
+                <span style="color: White; font-size: 10px; padding-left: 10px;">Powered by <a href="mailto:rojaslautaro09@gmail.com"
+                    style="background-color: Transparent; color: White; font-weight: bold;">Lautaro Rojas</a></span>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

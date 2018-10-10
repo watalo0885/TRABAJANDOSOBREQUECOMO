@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterSinMenu.master.cs"
+    Inherits="MainMasterSinMenu" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Que-Como - Panel de Control</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="true"
+        EnableScriptLocalization="true" EnablePartialRendering="true">
+        <Scripts>
+            <asp:ScriptReference Path="~/_assets/JQuery/jquery-1.3.js" />
+            <asp:ScriptReference Path="~/_assets/JQuery/thickbox.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <div>
+        <table border="0" style="width: 100%; height: 100%;" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="height: 96%;">
+                    <asp:ContentPlaceHolder ID="CPH_Body" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td id="pie">
+                     <span style="color: White; font-size: 10px; padding-left: 10px;">Powered by <a href="mailto:rojaslautaro09@gmail.com"
+                    style="background-color: Transparent; color: White; font-weight: bold;">Lautaro Rojas</a></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

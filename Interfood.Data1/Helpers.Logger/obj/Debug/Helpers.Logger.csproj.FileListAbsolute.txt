@@ -1,0 +1,14 @@
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\bin\Debug\Helpers.Logger.dll
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\bin\Debug\Helpers.Logger.pdb
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.dll
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.xml
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\obj\Debug\Helpers.Logger.csprojResolveAssemblyReference.cache
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\obj\Debug\Helpers.Logger.dll
+D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Logger\obj\Debug\Helpers.Logger.pdb

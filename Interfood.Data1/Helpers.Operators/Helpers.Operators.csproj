@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42E815B0-1FE1-49F6-A28A-B21C539DA30A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Helpers.Operators</RootNamespace>
+    <AssemblyName>Helpers.Operators</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConvertirOperadores.cs" />
+    <Compile Include="OperadoresParaCombosDeFiltro.cs" />
+    <Compile Include="Operadores_BigInt.cs" />
+    <Compile Include="Operadores_Bit.cs" />
+    <Compile Include="Operadores_Char.cs" />
+    <Compile Include="Operadores_DateTime.cs" />
+    <Compile Include="Operadores_Decimal.cs" />
+    <Compile Include="Operadores_Float.cs" />
+    <Compile Include="Operadores_Int.cs" />
+    <Compile Include="Operadores_Money.cs" />
+    <Compile Include="Operadores_NChar.cs" />
+    <Compile Include="Operadores_NText.cs" />
+    <Compile Include="Operadores_Numeric.cs" />
+    <Compile Include="Operadores_NVarChar.cs" />
+    <Compile Include="Operadores_Real.cs" />
+    <Compile Include="Operadores_SmallDateTime.cs" />
+    <Compile Include="Operadores_SmallInt.cs" />
+    <Compile Include="Operadores_SmallMoney.cs" />
+    <Compile Include="Operadores_String.cs" />
+    <Compile Include="Operadores_Text.cs" />
+    <Compile Include="Operadores_TinyInt.cs" />
+    <Compile Include="Operadores_UniqueIdentifier.cs" />
+    <Compile Include="Operadores_VarChar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

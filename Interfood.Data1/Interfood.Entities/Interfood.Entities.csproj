@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B1DFF39-F48B-4604-A75F-CC3E671C8B6B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Interfood.Entities</RootNamespace>
+    <AssemblyName>Interfood.Entities</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Helpers.Logger">
+      <HintPath>..\Helpers.Logger\bin\Debug\Helpers.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation">
+      <HintPath>..\..\..\..\_Version1.1\Bin\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlimentoEntityFilter.cs" />
+    <Compile Include="AlimentoEntityInfo.cs" />
+    <Compile Include="AlimentoEntityInsert.cs" />
+    <Compile Include="AlimentoEntityKey.cs" />
+    <Compile Include="AlimentoEntityPaged.cs" />
+    <Compile Include="AlimentoEntityUpdate.cs" />
+    <Compile Include="AlimentoEntityUpdateNullFields.cs" />
+    <Compile Include="AlimentoNutrienteEntityFilter.cs" />
+    <Compile Include="AlimentoNutrienteEntityInfo.cs" />
+    <Compile Include="AlimentoNutrienteEntityInsert.cs" />
+    <Compile Include="AlimentoNutrienteEntityKey.cs" />
+    <Compile Include="AlimentoNutrienteEntityPaged.cs" />
+    <Compile Include="AlimentoNutrienteEntityUpdate.cs" />
+    <Compile Include="AlimentoNutrienteEntityUpdateNullFields.cs" />
+    <Compile Include="aspnet_ExtendedPropertiesEntityFilter.cs" />
+    <Compile Include="aspnet_ExtendedPropertiesEntityInfo.cs" />
+    <Compile Include="aspnet_ExtendedPropertiesEntityInsert.cs" />
+    <Compile Include="aspnet_ExtendedPropertiesEntityKey.cs" />
+    <Compile Include="aspnet_ExtendedPropertiesEntityPaged.cs" />
+    <Compile Include="aspnet_ExtendedPropertiesEntityUpdate.cs" />
+    <Compile Include="aspnet_ExtendedPropertiesEntityUpdateNullFields.cs" />
+    <Compile Include="aspnet_RolesEntityFilter.cs" />
+    <Compile Include="aspnet_RolesEntityInfo.cs" />
+    <Compile Include="aspnet_RolesEntityInsert.cs" />
+    <Compile Include="aspnet_RolesEntityKey.cs" />
+    <Compile Include="aspnet_RolesEntityPaged.cs" />
+    <Compile Include="aspnet_RolesEntityUpdate.cs" />
+    <Compile Include="aspnet_RolesEntityUpdateNullFields.cs" />
+    <Compile Include="EncuestaAlimentariaEntityFilter.cs" />
+    <Compile Include="EncuestaAlimentariaEntityInfo.cs" />
+    <Compile Include="EncuestaAlimentariaEntityInsert.cs" />
+    <Compile Include="EncuestaAlimentariaEntityKey.cs" />
+    <Compile Include="EncuestaAlimentariaEntityPaged.cs" />
+    <Compile Include="EncuestaAlimentariaEntityUpdate.cs" />
+    <Compile Include="EncuestaAlimentariaEntityUpdateNullFields.cs" />
+    <Compile Include="EncuestaAlimentoEntityFilter.cs" />
+    <Compile Include="EncuestaAlimentoEntityInfo.cs" />
+    <Compile Include="EncuestaAlimentoEntityInsert.cs" />
+    <Compile Include="EncuestaAlimentoEntityKey.cs" />
+    <Compile Include="EncuestaAlimentoEntityPaged.cs" />
+    <Compile Include="EncuestaAlimentoEntityUpdate.cs" />
+    <Compile Include="EncuestaAlimentoEntityUpdateNullFields.cs" />
+    <Compile Include="EncuestaAliNutEntityFilter.cs" />
+    <Compile Include="EncuestaAliNutEntityInfo.cs" />
+    <Compile Include="EncuestaAliNutEntityInsert.cs" />
+    <Compile Include="EncuestaAliNutEntityKey.cs" />
+    <Compile Include="EncuestaAliNutEntityPaged.cs" />
+    <Compile Include="EncuestaAliNutEntityUpdate.cs" />
+    <Compile Include="EncuestaAliNutEntityUpdateNullFields.cs" />
+    <Compile Include="FuenteEntityFilter.cs" />
+    <Compile Include="FuenteEntityInfo.cs" />
+    <Compile Include="FuenteEntityInsert.cs" />
+    <Compile Include="FuenteEntityKey.cs" />
+    <Compile Include="FuenteEntityPaged.cs" />
+    <Compile Include="FuenteEntityUpdateNullFields.cs" />
+    <Compile Include="FuenteEntityUpdate.cs" />
+    <Compile Include="Listado_AlimentosPorEncuestasEntityFilter.cs" />
+    <Compile Include="Listado_AlimentosPorEncuestasEntityInfo.cs" />
+    <Compile Include="Listado_AlimentosPorEncuestasEntityPaged.cs" />
+    <Compile Include="Listado_NutrientesPorAlimentosEntityFilter.cs" />
+    <Compile Include="Listado_NutrientesPorAlimentosEntityInfo.cs" />
+    <Compile Include="Listado_NutrientesPorAlimentosEntityPaged.cs" />
+    <Compile Include="Listado_NutrientesPorEncuestasEntityFilter.cs" />
+    <Compile Include="Listado_NutrientesPorEncuestasEntityInfo.cs" />
+    <Compile Include="Listado_NutrientesPorEncuestasEntityPaged.cs" />
+    <Compile Include="NutrienteEntityFilter.cs" />
+    <Compile Include="NutrienteEntityInfo.cs" />
+    <Compile Include="NutrienteEntityInsert.cs" />
+    <Compile Include="NutrienteEntityKey.cs" />
+    <Compile Include="NutrienteEntityPaged.cs" />
+    <Compile Include="NutrienteEntityUpdate.cs" />
+    <Compile Include="NutrienteEntityUpdateNullFields.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoDeAlimentosEntityFilter.cs" />
+    <Compile Include="TipoDeAlimentosEntityInfo.cs" />
+    <Compile Include="TipoDeAlimentosEntityInsert.cs" />
+    <Compile Include="TipoDeAlimentosEntityKey.cs" />
+    <Compile Include="TipoDeAlimentosEntityPaged.cs" />
+    <Compile Include="TipoDeAlimentosEntityUpdate.cs" />
+    <Compile Include="TipoDeAlimentosEntityUpdateNullFields.cs" />
+    <Compile Include="TipoDeDietaEntityFilter.cs" />
+    <Compile Include="TipoDeDietaEntityInfo.cs" />
+    <Compile Include="TipoDeDietaEntityInsert.cs" />
+    <Compile Include="TipoDeDietaEntityKey.cs" />
+    <Compile Include="TipoDeDietaEntityPaged.cs" />
+    <Compile Include="TipoDeDietaEntityUpdate.cs" />
+    <Compile Include="TipoDeDietaEntityUpdateNullFields.cs" />
+    <Compile Include="UnidadMedidaEntityFilter.cs" />
+    <Compile Include="UnidadMedidaEntityInfo.cs" />
+    <Compile Include="UnidadMedidaEntityInsert.cs" />
+    <Compile Include="UnidadMedidaEntityKey.cs" />
+    <Compile Include="UnidadMedidaEntityPaged.cs" />
+    <Compile Include="UnidadMedidaEntityUpdate.cs" />
+    <Compile Include="UnidadMedidaEntityUpdateNullFields.cs" />
+    <Compile Include="vAlimentoNutrienteEntityFilter.cs" />
+    <Compile Include="vAlimentoNutrienteEntityInfo.cs" />
+    <Compile Include="vAlimentoNutrienteEntityPaged.cs" />
+    <Compile Include="vAlimentoNutrienteParaAgregarEntityFilter.cs" />
+    <Compile Include="vAlimentoNutrienteParaAgregarEntityInfo.cs" />
+    <Compile Include="vAlimentoNutrienteParaAgregarEntityPaged.cs" />
+    <Compile Include="vAlimentosDeEncuestasEntityFilter.cs" />
+    <Compile Include="vAlimentosDeEncuestasEntityInfo.cs" />
+    <Compile Include="vAlimentosDeEncuestasEntityPaged.cs" />
+    <Compile Include="vAlimentosEntityFilter.cs" />
+    <Compile Include="vAlimentosEntityInfo.cs" />
+    <Compile Include="vAlimentosEntityPaged.cs" />
+    <Compile Include="vEncuestaAlimentoEntityFilter.cs" />
+    <Compile Include="vEncuestaAlimentoEntityInfo.cs" />
+    <Compile Include="vEncuestaAlimentoEntityPaged.cs" />
+    <Compile Include="vEncuestaHeaderEntityFilter.cs" />
+    <Compile Include="vEncuestaHeaderEntityInfo.cs" />
+    <Compile Include="vEncuestaHeaderEntityPaged.cs" />
+    <Compile Include="vExtendedPropertiesEntityFilter.cs" />
+    <Compile Include="vExtendedPropertiesEntityInfo.cs" />
+    <Compile Include="vExtendedPropertiesEntityPaged.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Helpers.Operators\Helpers.Operators.csproj">
+      <Project>{42e815b0-1fe1-49f6-a28a-b21c539da30a}</Project>
+      <Name>Helpers.Operators</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfood.Configuration\Interfood.Configuration.csproj">
+      <Project>{caf9c523-c22f-4887-a271-0c3f8ea71fa7}</Project>
+      <Name>Interfood.Configuration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
