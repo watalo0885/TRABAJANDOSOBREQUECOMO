@@ -35,7 +35,7 @@ public partial class Admin_Administration_Managers_AlimentoNutriente : System.We
     #region Button Refresh
     protected void btnRefresh_Click(object sender, EventArgs e)
     {
-        lvGeneric.DataBind();
+        //lvGeneric.DataBind();
     }
     #endregion
 
@@ -315,20 +315,6 @@ public partial class Admin_Administration_Managers_AlimentoNutriente : System.We
     }
     #endregion
 
-
-    #region Selecciono FUENTE - CBO
-    protected void cboFuentes_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        if (((DropDownList)sender).SelectedValue != "0")
-        {
-            filterAlimentoNutriente.OpeNutrienteId = Helpers.Operators.Operadores_Int.Igual;
-            filterAlimentoNutriente.NutrienteId = int.Parse("0" + ((DropDownList)sender).SelectedValue);
-        }
-        BindearListView();
-        divAddNutrientes.Visible = false;
-        btnAgregarNutrientes.Visible = true;
-    }
-    #endregion
 
     #region PagePropertiesChanged
     protected void lvGeneric_PagePropertiesChanged(object sender, EventArgs e)

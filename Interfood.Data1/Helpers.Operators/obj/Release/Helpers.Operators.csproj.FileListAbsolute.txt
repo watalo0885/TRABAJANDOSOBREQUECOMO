@@ -2,8 +2,3 @@ D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Operators\bin\Rele
 D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Operators\bin\Release\Helpers.Operators.pdb
 D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Operators\obj\Release\Helpers.Operators.dll
 D:\WEB\SubProyecto\LibreriasProyectos\Interfood.Data1\Helpers.Operators\obj\Release\Helpers.Operators.pdb
-D:\TRABAJANDOSOBREQUECOMO\Interfood.Data1\Helpers.Operators\bin\Release\Helpers.Operators.dll
-D:\TRABAJANDOSOBREQUECOMO\Interfood.Data1\Helpers.Operators\bin\Release\Helpers.Operators.pdb
-D:\TRABAJANDOSOBREQUECOMO\Interfood.Data1\Helpers.Operators\obj\Release\Helpers.Operators.csprojResolveAssemblyReference.cache
-D:\TRABAJANDOSOBREQUECOMO\Interfood.Data1\Helpers.Operators\obj\Release\Helpers.Operators.dll
-D:\TRABAJANDOSOBREQUECOMO\Interfood.Data1\Helpers.Operators\obj\Release\Helpers.Operators.pdb

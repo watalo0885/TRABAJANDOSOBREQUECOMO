@@ -79,7 +79,7 @@
                                  <!-- FUENTE DEL ALIMENTO -->
                                 <div style="padding: 5px; padding-bottom: 20px; float: left;">
                                     Fuente
-                                    <asp:DropDownList ID="cboFuentes" runat="server" AutoPostBack="true" Width="200" AppendDataBoundItems="true" OnSelectedIndexChanged="cboFuentes_SelectedIndexChanged">
+                                    <asp:DropDownList ID="cboFuentes" runat="server" AutoPostBack="true" Width="200" AppendDataBoundItems="true" OnSelectedIndexChanged="cboNutrientes_SelectedIndexChanged">
                                         <asp:ListItem Selected="True" Text="-- Seleccione Fuente --" Value="0"></asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
@@ -202,7 +202,7 @@
                                                         </h4>
                                                     </div>
                                                     <div style="padding: 5px; float: right;">
-                                                        <asp:Button ID="ButtonOk" CausesValidation="false" runat="server" Text=" Si " />
+                                                        <asp:Button ID="ButtonOk" CausesValidation="false" runat="server" Text=" Yes " />
                                                         <asp:Button ID="ButtonCancel" CausesValidation="false" runat="server" Text=" No " />
                                                         <asp:LinkButton ID="LinkButton2" runat="server" CssClass="close" CausesValidation="false" />
                                                     </div>
@@ -366,8 +366,6 @@
                                             </div>
                                         </EmptyDataTemplate>
                                     </asp:ListView>
-                                    <p>
-                                    </p>
                                 </p>
                             </div>
                             <!-- AGREGAR NUTRIENTE -->
